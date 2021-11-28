@@ -1,0 +1,47 @@
+package repititionandselection;
+
+import java.util.Scanner;
+
+public class VendingMechine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int choice,quantity;
+		double price = 0;
+		int mango = 1;
+		int apple = 2;
+		int orange = 3;
+		
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.println("Rayyan's Vending Machine");
+		System.out.println("Mango Juice :RM 2.00");
+		System.out.println("Apple Juice :RM 2.50");
+		System.out.println("Orange Juice :RM 1.50");
+		
+		System.out.println("Enter the choice:");
+		choice = sc.nextInt();
+		
+		System.out.println("Enter the quantity:");
+		quantity = sc.nextInt();
+		
+		if (choice == 1) {
+			price = 2*quantity;
+		}
+		else if (choice == 2)
+		{
+			price = 2.5*quantity;
+		}
+		else if (choice == 3)
+		{
+			price =1.5*quantity;
+		}
+		System.out.println("RM" + price);
+			price =sc.nextInt();
+		}
+			
+		
+		
+	}
+
+
